@@ -1,0 +1,245 @@
+/* General Styling */
+* {
+  margin:0;
+  padding: 10;;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+    vertical-align:middle;
+    margin: right 10px;;
+}
+
+body {
+  background-image: url(../image/sta-monica-church.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #000000;
+}
+
+/* Header */
+header {
+  background-color: #92825e;
+  padding: 15px;
+  text-align: center;
+}
+ 
+img{
+ width:500px;
+ height:500px;
+}
+header h1 {
+  color: rgb(23, 5, 5);
+  font-size: 26px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ddddc8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: rgb(20, 2, 2);
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #ccd482;
+}
+
+/* Sections */
+section {
+  display: none;
+  padding: 40px 20px;
+  text-align: center;
+  animation: fadeIn 0.5s;
+}
+
+section.active {
+  display: block;
+}
+
+section h2 {
+  color: #0b0b0b;
+  margin-bottom: 20px;
+  font-size: 28px;
+} 
+
+section p, section ul {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  color: #1a0707;
+}
+
+.festival-img{
+  text-align: center;
+}
+
+.festival-img img{
+  display: inline-block;
+  width: 300px;
+}
+
+/* Image Container */
+.image-container {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Product List */
+.product-list {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  text-align: center;
+  margin: auto;
+}
+
+.product-list li {
+  background: #f3e8b7;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-left: 5px solid #ecebb0;
+  border-radius: 5px;
+}
+
+.product-list img {
+    width: 100%s;
+}
+
+/* Footer */
+footer {
+  background-color: #8d8a6ee1;
+  color: rgb(4, 0, 0);
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* -----------------------------*/
+@media (max-width: 414px) {
+  body {
+    padding: 0;
+    background-size: cover;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  section h2 {
+    font-size: 22px;
+  }
+
+  .image-container {
+    width: 90%;
+  }
+
+  .product-list {
+    max-width: 90%;
+  }
+
+  .product-list li {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* ------------------------*/
+@media (min-width: 415px) and (max-width: 428px) {
+  body {
+    padding: 0;
+    background-size: cover;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 12px;
+    font-size: 17px;
+  }
+
+  section {
+    padding: 25px 15px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  .image-container {
+    width: 95%;
+  }
+
+  .product-list {
+    max-width: 95%;
+  }
+
+  .product-list li {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 15px;
+    padding: 12px;
+  }
+}

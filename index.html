@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarrat, Ilocos Norte</title>
+  <link rel="stylesheet" href=".//CSS/style.css">
+</head>
+<body>
+
+  <header>
+    <img src=".//image/download.png" alt="sarrat logo" class="logo">
+    <h1>Sarrat, Ilocos Norte</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('history')">History</a>
+    <a href="#" onclick="showSection('products')">Products</a>
+    <a href="#" onclick="showSection('festival')">Festival</a>
+    <a href="#" onclick="showSection('about')">About</a>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="active">
+    <h2>Welcome to Sarrat</h2>
+    <p>The historic heart of Ilocos Norte — known for its rich culture, peaceful community, and timeless traditions.</p>
+  </section>
+
+  <!-- HISTORY -->
+  <section id="history">
+    <h2>History of Sarrat</h2>
+    <div class="image-container">
+    </div>
+    <p>
+      Sarrat is one of the oldest towns in Ilocos Norte. It was founded in the 16th century during the Spanish period. The town is known for its beautiful old church, the Santa Monica Church, which is one of the biggest in the province. Sarrat is also the birthplace of former President Ferdinand E. Marcos. Through the years, the town has kept its rich culture, traditions, and strong community spirit.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <h2>Products of Sarrat</h2>
+    <div class="image-container">
+    </div>
+    <p>
+      The hardworking people of Sarrat produce goods that showcase Ilocano creativity and pride. Some of the most popular local products are:
+    </p>
+    <ul class="product-list">
+      <li><b>binakol</b> –Binakol is a handwoven cloth made in Sarrat, Ilocos Norte. It has beautiful patterns that look like moving waves or circles. The weavers use wooden looms and cotton threads to make it. Binakol is used for clothes, bags, and home decorations. It shows the skill and creativity of the people of Sarrat.
+      </li>
+            <img src=".//image/exhibit-slideshow-artofloom1-768x510-optimized.jpg" alt="Products of Sarrat" class="img">
+      <li><b>tupig</b> –Tupig is a famous native delicacy from Sarrat, Ilocos Norte. It’s made of glutinous rice, coconut, and brown sugar, wrapped in banana leaves and grilled over charcoal. Tupig from Sarrat is known for its sweet taste and smoky aroma, making it a favorite treat during festivals and special occasions.
+      </li>
+            <img src=".//image/images.jpeg" alt="product of sarrat" class="img">
+    </ul>
+  </section>
+
+  <!-- FESTIVAL -->
+  <section id="festival">
+    <h2>Festival of Sarrat</h2>
+    <div class="festival image">
+      <img src=".///image/festival.jpeg" alt="binakol festival"> 
+    </div>
+    <p>
+      The most awaited celebration in Sarrat is the <b>Sta. Monica Fiesta</b>, held every May in honor of the town’s patron saint, 
+      <b>St. Monica</b>. It features colorful parades, street dancing, cultural shows, and food fairs.
+    </p>
+    <p>
+      The festival unites the community and showcases the faith, hospitality, and joyful spirit of the Sarrateños.
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is <b>TERENCE NEIL BALISACAN</b>. I created this website to share the history, culture, and pride of my hometown — Sarrat, Ilocos Norte.
+    </p>
+    <p>
+      I’m passionate about technology and web design, and this project is my way of combining creativity with my love for our culture.
+      Thank you for visiting my website!
+    </p>
+  </section>
+
+  <footer>
+    <p>2025 Sarrat, Ilocos Norte | Made by TERENCE NEIL BALISACAN</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
